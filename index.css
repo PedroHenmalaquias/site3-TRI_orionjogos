@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url("fundo_header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+.logo {
+    height: 70px;
+    width: 80px;
+    margin-left: 5.5%;
+}
+.logo>img {
+    height: 70px;
+    width: 80px;
+}
