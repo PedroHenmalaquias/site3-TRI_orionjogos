@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito:wght@600&display=swap');
+
 * {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box
 }
 
@@ -15,14 +19,14 @@ img {
     vertical-align: middle;
 }
 
-/* Slideshow container */
+
 .slideshow-container {
     width: 100%;
     position: relative;
     margin: auto;
 }
 
-/* Next & previous buttons */
+
 .prev,
 .next {
     cursor: pointer;
@@ -39,19 +43,18 @@ img {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -62,7 +65,7 @@ img {
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -71,7 +74,7 @@ img {
     top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -88,11 +91,96 @@ img {
     background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
+.carrossel {
+    height: 45vh;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+.pesquisa {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#filtro {
+    padding: 15px;
+    width: 60vw;
+    font-size: 18px;
+    border: 1px solid rgb(131, 125, 125);
+    border-radius: 30px;
+}
+
+.lupa {
+    margin-top: 3px;
+    margin-right: 5px;
+    height: 45px;
+}
+
+.produtos {
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-lista {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.corpo {
+    border: 1px solid rgb(131, 125, 125);
+    width: 18rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.container-imagens {
+    height: 15rem;
+    width: 15rem;
+}
+
+#lista-produtos {
+    list-style: none;
+}
+
+.imagens-produtos {
+    width: 15rem;
+    height: 15rem;
+}
+
+.list-item {
+    width: 18rem;
+}
+
+#lista-produtos{
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 95%;
+}
+
+
 
 @keyframes fade {
     from {
@@ -104,7 +192,7 @@ img {
     }
 }
 
-/* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
 
     .prev,

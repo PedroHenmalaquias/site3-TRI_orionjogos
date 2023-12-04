@@ -1,43 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orion Jogos</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orion Jogos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <section>
     <div class="slideshow-container">
 
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="midia/Captura de tela de 2023-11-29 14-22-10.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="midia/Captura de tela de 2023-11-29 14-31-26.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="midia/Captura de tela de 2023-11-29 14-41-14.png" style="width:100%">
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="carrossel" src="midia/Captura de tela de 2023-11-29 14-22-10.png" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="carrossel" src="midia/Captura de tela de 2023-11-29 14-31-26.png" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="carrossel" src="midia/Captura de tela de 2023-11-29 14-41-14.png" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+  </section>
+  <main>
+    <div class="barra-de-pesquisa">
+      <div class="pesquisa">
+        <img class="lupa"
+          src="midia/png-transparent-magnifying-glass-computer-icons-magnifying-glass-glass-magnifier-brand-removebg-preview.png">
+        <form>
+          <input type="text" id="filtro" oninput="filtrar()" placeholder="O que você procura ?">
+        </form>
+      </div>
+    </div>
+    <div class="produtos">
+      <div class="container-lista">
+        <h1>NOSSOS PRODUTOS :</h1>
+        <ul id="lista-produtos">
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos"
+                  src="midia/brinquedo_jogo_jenga_novo_hasbro_a2120_5189_1_8bb4e25b04e29b9040a42c27c6d371f2-PhotoRoom.png-PhotoRoom.png">
+              </div>
+              <h2 class="nome-produto">JENGA</h2>
+              <h3>R$ 199,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/shopping-PhotoRoom.png-PhotoRoom.png">
+              </div>
+              <h2 class="nome-produto">CAMEL UP</h2>
+              <h3>R$ 299,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/SKULL.png">
+              </div>
+              <h2 class="nome-produto">SKULL</h2>
+              <h3>R$ 120,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/concept.png">
+              </div>
+              <h2 class="nome-produto">CONCEPT</h2>
+              <h3>R$ 299,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/MARVEL.png">
+              </div>
+              <h2 class="nome-produto">MARVEL UNITED</h2>
+              <h3>R$ 250,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/astronautas.png">
+              </div>
+              <h2 class="nome-produto">ASTRONAUTAS</h2>
+              <h3>R$ 99,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/CATAN.png">
+              </div>
+              <h2 class="nome-produto">CATAN</h2>
+              <h3>R$ 110,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/monopoly.png">
+              </div>
+              <h2 class="nome-produto">MONOPOLY</h2>
+              <h3>R$ 169,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/Eldritch Horror.png">
+              </div>
+              <h2 class="nome-produto">ELDRITCH HORROR</h2>
+              <h3>R$ 499,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/king of tokyo.png">
+              </div>
+              <h2 class="nome-produto">KING OF TOKYO</h2>
+              <h3>R$ 249,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/DIXIT.png">
+              </div>
+              <h2 class="nome-produto">DIXIT</h2>
+              <h3>R$ 239,00</h3>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="corpo">
+              <div class="container-imagens">
+                <img class="imagens-produtos" src="midia/Potion Explosion.png">
+              </div>
+              <h2 class="nome-produto">Potion Explosion</h2>
+              <h3>R$ 499,00</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
 </body>
-<script src="index.js"></script>
+
+<script src="script.js"></script>
+
 </html>
