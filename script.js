@@ -27,7 +27,7 @@ function showSlides(n) {
 
 function filtrar() {
   let input,
-    filtrinho,
+    filter,
     ul,
     li,
     h2,
@@ -40,9 +40,9 @@ function filtrar() {
   ul = document.getElementById('lista-produtos')
 
 
-  filtrinho = input.value.toUppercase();
+  filter = input.value.toUpperCase();
 
-  li = ul.getElementsByTagNameNS("li")
+  li = ul.getElementsByTagName("li")
 
 
   for (i = 0; i < li.length; i++) {
@@ -50,7 +50,7 @@ function filtrar() {
     h2 = li[i].getElementsByTagName("h2")[0]
     txtValue = h2.textContent;
 
-    if (txtValue.toUppercase().indexOf(filtrinho) > -1) {
+    if (txtValue.indexOf(filter) > -1) {
 
       li[i].style.display = "";
 
@@ -59,7 +59,7 @@ function filtrar() {
       span = li[i].querySelector(".nome-produto")
 
       if (span) {
-        span.innerHTML = txtValue.replace(new RegExp(filtrinho, "gi"), (match) => {
+        span.innerHTML = txtValue.replace(new RegExp(filter, "gi"), (match) => {
           return "<strong>" + match + "</strong>";
         })
       }
