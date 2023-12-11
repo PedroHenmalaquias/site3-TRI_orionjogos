@@ -36,7 +36,7 @@ nav {
     display: flex;
 }
 
-.botãoNav {
+.botaoNav {
     width: 150px;
     height: 40px;
     color: white;
@@ -79,6 +79,7 @@ nav {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .imgfundoFooter{
     background-image: url("fundoFooter.png");
     background-size: cover;
@@ -87,12 +88,73 @@ nav {
     height: 130px;
     margin-top: 800px;
 }
+.conteudoFooter{
+    display: flex;
+}
 .logoFooter{
-    width: 15%;
+    width: 40%;
     height: 200px;
     margin: auto;
 }
 .logoFooter > img{
     width: 100%;
     height: 200px;
+}
+.ladoFooter{
+width: 40%;
+margin: auto;
+display: flex;
+flex-direction: column;
+}
+.ladoFooter > h3{
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+.ladoFooter > h2{
+    text-align: center;
+}
+@media screen and (max-width: 1024px) {
+    header{
+        height: 60px;
+    }
+    .dropbtn{
+        height: 30px;
+        font-size: 17px;
+    }
+    .logo{
+        height: 60px;
+        width: 70px;
+    }
+    .logo > img{
+        height: 60px;
+        width: 70px
+    }
+    .botaoNav{
+        width: 130px;
+        height: 30px;
+        font-size: 17px;
+    }
+    .imgfundoFooter{
+        height: 100px;
+    }
+    .logoFooter{
+        height: 160px;
+    }
+    .logoFooter > img {
+        height: 160px
+    }
+}
+@media screen and (max-width: 812px){
+    header{
+        height: 50px;
+    }
+    .logo{
+        height: 50px;
+        width: 60px;
+    }
+    .logo > img{
+        height: 50px;
+        width: 60px
+    }
 }
