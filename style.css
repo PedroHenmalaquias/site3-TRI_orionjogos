@@ -75,7 +75,86 @@ img {
     top: 50%;
     width: auto;
     padding: 16px;
-    margin-top: -22px;
+    margin-top: -22px;<!DOCTYPE html>
+    <h3>R$ 110,00</h3>
+  </div>
+</li>
+<li class="list-item">
+  <div class="corpo">
+    <div class="container-imagens">
+      <img class="imagens-produtos" src="midia/monopoly.png">
+    </div>
+    <h2 class="nome-produto">MONOPOLY</h2>
+    <h3>R$ 169,00</h3>
+  </div>
+</li>
+<li class="list-item">
+  <div class="corpo">
+    <div class="container-imagens">
+      <img class="imagens-produtos" src="midia/Eldritch Horror.png">
+    </div>
+    <h2 class="nome-produto">ELDRITCH HORROR</h2>
+    <h3>R$ 499,00</h3>
+  </div>
+</li>
+<li class="list-item">
+  <div class="corpo">
+    <div class="container-imagens">
+      <img class="imagens-produtos" src="midia/king of tokyo.png">
+    </div>
+    <h2 class="nome-produto">KING OF TOKYO</h2>
+    <h3>R$ 249,00</h3>
+  </div>
+</li>
+<li class="list-item">
+  <div class="corpo">
+    <div class="container-imagens">
+      <img class="imagens-produtos" src="midia/DIXIT.png">
+    </div>
+    <h2 class="nome-produto">DIXIT</h2>
+    <h3>R$ 239,00</h3>
+  </div>
+</li>
+<li class="list-item">
+  <div class="corpo">
+    <div class="container-imagens">
+      <img class="imagens-produtos" src="midia/Potion Explosion.png">
+    </div>
+    <h2 class="nome-produto">Potion Explosion</h2>
+    <h3>R$ 499,00</h3>
+  </div>
+</li>
+</ul>
+</div>
+</div>
+<div class="container">
+<h1 id="h1Cadastro">Cadastrar usuário</h1>
+<form>
+  <div class="input-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+  </div>
+  <div class="input-group">
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+  </div>
+  <div class="input-group">
+      <label for="confirm-password">Confirmar senha:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+  </div>
+  <div class="input-group" id="finalizar">
+      <button type="submit">Cadastrar usuário</button>
+      <button type="reset">Já tenho cadastro</button>
+  </div>
+</form>
+</div>
+</main>
+</body>
+
+<script src="script.js"></script>
+
+</html>
+
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -221,13 +300,15 @@ main { @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&dis
     flex-direction: row;
     gap: 20px;
 }
-div.container {
+div#container {
             display: flex;
             background-color: #3938D3;
             text-align: center;
             justify-content: center;
             height: 350px;
             gap: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         } #imagem, #textos {
             width: 250px;
             height: 250px;
@@ -240,12 +321,14 @@ div.container {
         body {
             font-family: "Open Sans", sans-serif;
         }
-        .container {
+        #container_Form {
             max-width: 500px;
             margin: 0 auto;
             padding: 20px;
             border: 1px solid black;
             border-radius: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .input-group {
             margin-bottom: 20px;
