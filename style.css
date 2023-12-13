@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito:wght@600&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 * {
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Nunito', sans-serif;
@@ -17,7 +18,47 @@ body {
 
 img {
     vertical-align: middle;
-}
+} @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .input-group button {
+            background-color: #3938D3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 68px;
+        }
+        #h1Cadastro{
+            display: flex;
+            height: 100px;
+            background-color: #3938D3;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
 
 
 .slideshow-container {
@@ -194,6 +235,47 @@ div.container {
         } #textos {
             color: white;
             font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .input-group button {
+            background-color: #3938D3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 68px;
+        }
+        #h1Cadastro{
+            display: flex;
+            height: 100px;
+            background-color: #3938D3;
+            color: white;
+            align-items: center;
+            justify-content: center;
         }
 
 
