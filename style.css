@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito:wght@600&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 * {
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Nunito', sans-serif;
@@ -102,7 +102,7 @@ img {
     height: 45vh;
 }
 
-main {
+main { @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
     width: 100%;
     height: 100vh;
 }
@@ -180,6 +180,21 @@ main {
     flex-direction: row;
     gap: 20px;
 }
+div.container {
+            display: flex;
+            background-color: #3938D3;
+            text-align: center;
+            justify-content: center;
+            height: 350px;
+            gap: 100px;
+        } #imagem, #textos {
+            width: 250px;
+            height: 250px;
+            margin-top: 20px;
+        } #textos {
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
 
 
 
