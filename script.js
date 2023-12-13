@@ -1,3 +1,4 @@
+//Carrosel de imagens;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,6 +26,7 @@ function showSlides(n) {
   dots[slideIndex - 1] += " active";
 }
 
+//Barra de pesquisa;
 function filtrar() {
   let input,
     filter,
@@ -63,7 +65,7 @@ function filtrar() {
           return "<strong>" + match + "</strong>";
         })
       }
-    }else{
+    } else {
       li[i].style.display = "none"
     }
   }
